@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Whising's Monkey Type Clone!</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="stats">
+            <p>Time: <span id="timer">60s</span></p>
+            <p>Mistakes: <span id="mistakes">0</span></p>
+        </div>
+        
+        <div class="font-selector" style="position: absolute; top: 10px; right: 10px;">
+            <select id="font-dropdown" onchange="changeFont()">
+                <option value="minecraft">Minecraft</option>
+                <option value="arial">Arial</option>
+                <option value="georgia">Georgia</option>
+            </select>
+        </div>
+
+        <div id="quote" onmousedown="return false" onselectstart="return false"></div>
+
+        <textarea id="quote-input" rows="3" placeholder="Press the start button to start typing..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+
+        <div class="buttons">
+            <button id="start-test" onclick="startTest()">Start</button>
+            <button id="stop-test" onclick="displayResult()">Stop Test</button>
+            <button id="reset-test" onclick="resetTest()">Reset</button>
+        </div>
+
+        <div class="result">
+            <h3>Result</h3>
+            <div class="wrapper">
+                <p class="result-box">Accuracy: <span id="accuracy">0%</span></p>
+                <p class="result-box">Speed: <span id="wpm">0 wpm</span></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
