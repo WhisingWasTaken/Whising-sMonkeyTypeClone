@@ -1,4 +1,4 @@
-# Whising-'s MonkeyType Clone
+# Whising's MonkeyType Clone
 A monkeytype clone, made in js!
 
 Hi everyone, this is a clone i made in arround 1.5hours, it has a set of 150 quotes with 3 different fonts you can practice your typing with!
